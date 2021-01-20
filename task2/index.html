@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Задание 2</title>
+</head>
+
+<body>
+    <form class="registration-form" action="#">
+        <h1 class="registration-form__header">Регистрация</h1>
+
+        <hr class="registration-form__hr">
+
+        <div class="registration-field-group">
+            <div class="registration-form__input-with-label m-20-5">
+                <label class="registration-form__label" for="email">E-mail</label>
+                <input class="registration-form__input" name="email" placeholder="example@site.domain" type="email" id="email" size="30" required>
+            </div>
+
+            <div class="registration-form__row m-20-5">
+                <div class="registration-form__input-with-label m-r-10">
+                    <label class="registration-form__label" for="password">Пароль</label>
+                    <input class="registration-form__input" name="password" placeholder="password" type="password" id="password" size="30" required>
+                </div>
+
+                <div class="registration-form__input-with-label">
+                    <label class="registration-form__label" for="repeat-password">Повторите пароль</label>
+                    <input class="registration-form__input" placeholder="password" type="password" id="repeat-password" size="30" required>
+                </div>
+            </div>
+
+            <div class="registration-form__input-with-label m-20-5">
+                <label class="registration-form__label" for="full-name">ФИО</label>
+                <input class="registration-form__input registration-form__input_full-width" name="full-name" placeholder="Игорев Игорь Игоревич" type="text" id="full-name" size="100" required>
+            </div>
+
+            <div class="registration-form__input-with-label m-20-5 registration-form__input-with-label_size-50">
+                <label class="registration-form__label" for="age">Возраст</label>
+                <input class="registration-form__input" name="age" placeholder="18" type="number" min="1" max="110" id="age" required>
+            </div>
+        </div>
+
+        <hr class="registration-form__hr">
+
+        <div class="registration-field-group m-20-5 d-flex j-c-space-between">
+            <input class="registration-form__button registration-form__button_dark" type="submit">
+            <input class="registration-form__button registration-form__button_light" type="reset" value="Отмена">
+        </div>
+    </form>
+    <a href="../index.html">Вернуться к списку задач</a>
+</body>
+
+</html>
