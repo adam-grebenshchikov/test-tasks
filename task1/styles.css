@@ -1,0 +1,29 @@
+.menu {
+    background-color: #CCCCCC;
+    max-width: 358px;
+    box-sizing: border-box;
+    list-style-type: none;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding-left: 0;
+    overflow: hidden;
+}
+
+.menu__item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 16px;
+    transition: 0.5s;
+    color: #000000;
+}
+
+.menu__item:hover {
+    background-color: #9C9C9C;
+}
+
+.menu__href {
+    text-decoration: none;
+}
