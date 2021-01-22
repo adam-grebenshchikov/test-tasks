@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 4</title>
+</head>
+
+<body>
+    <h2>Результат здесь и в консоли</h2>
+    <a href="../index.html">Вернуться к списку задач</a>
+
+    <script>
+        function printHerringbone(countRow, symbol) {
+            let herringboneString = "";
+            for (let row = 1; row <= countRow; row++) {
+                for (let countSpace = 1; countSpace <= countRow - row; countSpace++) {
+                    herringboneString += " "
+                }
+                for (let countSymbol = 1; countSymbol <= row; countSymbol++) {
+                    herringboneString += "# "
+                }
+                herringboneString += "\n"
+            }
+            return herringboneString;
+        }
+        console.log(printHerringbone(5, "#"));
+        document.body.innerHTML += `<pre>${printHerringbone(5, "#")}</pre>`;
+    </script>
+</body>
+
+</html>
