@@ -1,0 +1,29 @@
+.stepper {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+}
+
+.stepper__step {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.1em;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.stepper__step-name {
+    position: absolute;
+}
+
+.stepper__step_active svg path {
+    fill: url(#active);
+}
+
+.stepper__step_active {
+    -webkit-text-stroke: 1px black;
+}
